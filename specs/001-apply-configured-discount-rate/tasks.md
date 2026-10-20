@@ -30,7 +30,7 @@
 
 ### Implementation
 
-- [ ] T001 [US1] Update the discount calculation in `invoice-discount.cob` to use the configured percentage while preserving the existing amount precision, rounded behavior, displayed rate, and unrelated sample behavior.
+- [X] T001 [US1] Update the discount calculation in `invoice-discount.cob` to use the configured percentage while preserving the existing amount precision, rounded behavior, displayed rate, and unrelated sample behavior.
 
 ### Verification
 
@@ -73,3 +73,4 @@ The verification tasks must remain unchecked until performed. If no compatible c
 - Task IDs are sequential and each task follows the required checklist format.
 - No new test file path or test harness is specified because the repository establishes neither.
 - No task introduces policy for fractional, negative, or out-of-supported-range rates.
+- T002 and T003 remain unchecked: `Get-Command cobc` reported not found, `where.exe cobc` exited 1, and `wsl --list --quiet` returned no installed distribution. The COBOL program could not be compiled or run; source inspection and `git diff --check` do not replace those runtime checks.
