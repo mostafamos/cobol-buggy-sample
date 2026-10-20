@@ -28,5 +28,6 @@ MAIN.
     STOP RUN.
 
 CALCULATE-DISCOUNT.
-    COMPUTE WS-DISCOUNT ROUNDED =
-        WS-SUBTOTAL * WS-DISCOUNT-RATE / 100.
+    *> Intentional sample bug: this hard-codes 5% instead of using
+    *> WS-DISCOUNT-RATE, which is set to 15.
+    COMPUTE WS-DISCOUNT ROUNDED = WS-SUBTOTAL * 0.05.
